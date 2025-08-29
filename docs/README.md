@@ -42,7 +42,7 @@ Sin embargo, las métricas globales ocultan las disparidades entre grupos. Al se
 | Female  | 0.929    | 0.733     | 0.551  | 0.629| 0.082          | 0.551 | 0.025 |
 | Male    | 0.818    | 0.744     | 0.615  | 0.673| 0.252          | 0.615 | 0.093 |
 
-![IMAGEN 1](/image.png)
+![IMAGEN 1](image.png)
 
 
 **Tabla 3. Métricas por raza (baseline)**
@@ -55,7 +55,7 @@ Sin embargo, las métricas globales ocultan las disparidades entre grupos. Al se
 | Other              | 0.937    | 0.429     | 1.000  | 0.600| 0.111          | 1.000 | 0.067 |
 | White              | 0.848    | 0.750     | 0.609  | 0.672| 0.208          | 0.609 | 0.070 |
 
-![alt text](../image-1.png)
+![alt text](image-1.png)
 
 Las métricas de disparidad confirman estas brechas. En el caso del sexo, la diferencia de paridad demográfica (dp\_diff) alcanzó un valor de 0.169, mientras que el ratio de paridad fue de apenas 0.327, lo que significa que las mujeres tienen un tercio de las oportunidades de ser clasificadas con ingresos altos en comparación con los hombres. El indicador de igualdad de oportunidades (eo\_diff) fue de 0.068, lo que refleja diferencias significativas en la tasa de verdaderos positivos. En el caso de la raza, los valores fueron igualmente preocupantes: dp\_diff de 0.108, dp\_ratio de 0.478 y eo\_diff de 0.556.
 
