@@ -26,7 +26,7 @@ Al desagregar los ingresos por grupo se confirma esta situación. Entre los homb
 
 El modelo de referencia consistió en una regresión logística, precedida de un preprocesamiento que incluyó la estandarización de variables numéricas y la codificación *One Hot* para las categóricas. En el conjunto de prueba, este modelo alcanzó una exactitud del 85.4%, una precisión de 74.2%, un recall de 60.5% y una puntuación F1 de 66.7%. El área bajo la curva ROC fue de 0.90, lo cual indica una buena capacidad de discriminación general.
 
-Tabla 1. Métricas globales del modelo baseline
+**Tabla 1. Métricas globales del modelo baseline**
 
 | Accuracy | Precision | Recall | F1  | ROC AUC |
 |----------|-----------|--------|-----|---------|
@@ -35,7 +35,7 @@ Tabla 1. Métricas globales del modelo baseline
 
 Sin embargo, las métricas globales ocultan las disparidades entre grupos. Al segmentar por sexo, se encontró que el modelo predice ingresos altos para el 25.2% de los hombres, pero únicamente para el 8.2% de las mujeres. De manera similar, al segmentar por raza, el 20.8% de los blancos son clasificados como ganadores de más de 50,000 dólares, mientras que la proporción cae al 9.9% en negros y a aproximadamente un 11% en otras minorías.
 
-Tabla 2. Métricas por sexo (baseline)
+**Tabla 2. Métricas por sexo (baseline)**
 
 | Grupo   | Accuracy | Precision | Recall | F1   | Selection Rate | TPR   | FPR   |
 |---------|----------|-----------|--------|------|----------------|-------|-------|
@@ -45,7 +45,7 @@ Tabla 2. Métricas por sexo (baseline)
 ![alt text](../image.png)
 
 
-Tabla 3. Métricas por raza (baseline)
+**Tabla 3. Métricas por raza (baseline)**
 
 | Grupo              | Accuracy | Precision | Recall | F1   | Selection Rate | TPR   | FPR   |
 |--------------------|----------|-----------|--------|------|----------------|-------|-------|
@@ -70,7 +70,7 @@ La segunda estrategia consistió en el ajuste de umbrales diferenciados por grup
 
 La tercera estrategia aplicada fue **Reweighing**, que asigna pesos a las observaciones de acuerdo con la distribución conjunta de atributos sensibles e ingresos. En este caso, la disparidad racial se redujo de un eo\_diff de 0.556 a 0.333, manteniendo estables las métricas globales de desempeño, con una exactitud cercana al 85%. Esta técnica resultó especialmente útil porque logra un equilibrio razonable sin afectar de manera significativa la calidad predictiva del modelo.
 
-Tabla 4. Disparidades por sexo
+**Tabla 4. Disparidades por sexo**
 
 | Modelo       | dp_diff | dp_ratio | eo_diff |
 |--------------|---------|----------|---------|
@@ -95,7 +95,7 @@ Tabla 5. Disparidades por raza
 
 La comparación de las distintas estrategias muestra que no existe una solución única ni perfecta. En el caso del género, el ajuste de umbrales fue la técnica más efectiva para eliminar la disparidad en paridad demográfica, aunque sacrificó exactitud. Equalized Odds ofreció un balance más moderado, reduciendo de manera significativa las desigualdades sin afectar tanto las métricas globales. Reweighing, por su parte, mostró un desempeño intermedio, con mejoras aceptables y estabilidad en el rendimiento general.
 
-Tabla 6. Comparación sexo: baseline vs Equalized Odds
+**Tabla 6. Comparación sexo: baseline vs Equalized Odds**
 
 | Grupo   | Accuracy Before | Accuracy After | Recall Before | Recall After | F1 Before | F1 After | Selection Rate Before | Selection Rate After |
 |---------|-----------------|----------------|---------------|--------------|-----------|----------|-----------------------|----------------------|
@@ -106,7 +106,7 @@ Tabla 6. Comparación sexo: baseline vs Equalized Odds
 
 En el caso de la raza, Equalized Odds y Reweighing demostraron ser más efectivos que el ajuste de umbrales. Ambas técnicas redujeron el eo\_diff de más de 0.55 a valores entre 0.32 y 0.33, lo que representa una mejora sustancial, aunque las disparidades no se eliminan por completo. El ajuste de umbrales, en cambio, tuvo un impacto limitado y no logró equiparar de forma adecuada la probabilidad de clasificación entre grupos raciales.
 
-Tabla 7. Comparación raza: baseline vs Equalized Odds
+**Tabla 7. Comparación raza: baseline vs Equalized Odds**
 
 | Grupo              | Accuracy Before | Accuracy After | Recall Before | Recall After | F1 Before | F1 After | Selection Rate Before | Selection Rate After |
 |--------------------|-----------------|----------------|---------------|--------------|-----------|----------|-----------------------|----------------------|
