@@ -1,0 +1,4 @@
+uv.lock
+*.toml
+.python-version
+main.py
