@@ -26,7 +26,7 @@ Al desagregar los ingresos por grupo se confirma esta situación. Entre los homb
 
 El modelo de referencia consistió en una regresión logística, precedida de un preprocesamiento que incluyó la estandarización de variables numéricas y la codificación *One Hot* para las categóricas. En el conjunto de prueba, este modelo alcanzó una exactitud del 85.4%, una precisión de 74.2%, un recall de 60.5% y una puntuación F1 de 66.7%. El área bajo la curva ROC fue de 0.90, lo cual indica una buena capacidad de discriminación general.
 
-Tabla 1. Métricas globales del modelo baseline <br>
+Tabla 1. Métricas globales del modelo baseline 333<br>
 
 | Accuracy | Precision | Recall | F1  | ROC AUC |
 |----------|-----------|--------|-----|---------|
