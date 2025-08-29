@@ -42,7 +42,7 @@ Sin embargo, las métricas globales ocultan las disparidades entre grupos. Al se
 | Female  | 0.929    | 0.733     | 0.551  | 0.629| 0.082          | 0.551 | 0.025 |
 | Male    | 0.818    | 0.744     | 0.615  | 0.673| 0.252          | 0.615 | 0.093 |
 
-![alt text](../image.png)
+![IMAGEN 1](/image.png)
 
 
 **Tabla 3. Métricas por raza (baseline)**
