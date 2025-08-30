@@ -1,6 +1,9 @@
 
 # Informe sobre Mitigación de Sesgos en Modelos Predictivos: Adult Census Income Dataset
 
+## Indice
+![Jupyter Notebook con la resolucion](proyecto-01.ipynb)
+
 ## 1. Introducción y Contexto
 
 La Inteligencia Artificial se ha consolidado como una herramienta capaz de transformar industrias, optimizar procesos y mejorar la vida de las personas. No obstante, el uso de sistemas de IA conlleva un riesgo importante: la reproducción y, en ocasiones, la amplificación de desigualdades sociales preexistentes. Estas desigualdades pueden aparecer porque los datos contienen sesgos de origen histórico, porque los algoritmos están diseñados de manera que favorecen ciertos resultados, o porque la interpretación humana de los modelos carece de un análisis crítico de equidad.
