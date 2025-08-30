@@ -2,7 +2,7 @@
 # Informe sobre Mitigación de Sesgos en Modelos Predictivos: Adult Census Income Dataset
 
 ## Indice
-![Jupyter Notebook con la resolucion](proyecto-01.ipynb)
+[Jupyter Notebook con la resolucion](proyecto-01.ipynb)
 
 ## 1. Introducción y Contexto
 
